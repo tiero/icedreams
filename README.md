@@ -2,21 +2,24 @@
 IceDreams ioS/Android mobile app built with Meteor and Cordova 
 
 # Setup
-Install Meteor on OSX/Linux 
+##Install Meteor on OSX/Linux##
 
-Open the Terminal and type the following: 
+Open the Terminal and type the following: <br>
 <code>
 curl https://install.meteor.com/ | sh
-</code>
-When the installation finish, clone the repository 
-Paste in Terminal
+</code> <br><br>
+When the installation finish, clone the repository <br>
+Paste in Terminal<br>
 <code>
 https://github.com/tiero/icedreams.git icedreams-app
-</code>
+</code><br><br>
 
-Go inside the folder 
-<code> cd icedreams-app </code>
-<code> meteor npm install </code>
+Go inside the folder <br>
+<code> cd icedreams-app </code><br>
+<code> meteor npm install </code><br><br>
 
-Finally run 
+Finally run <br>
 <code> meteor </code>
+<br><br>
+
+Open yout browser and type <code>http://localhost:3000</code>
