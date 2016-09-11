@@ -1,0 +1,27 @@
+<template name="home">
+  <div class="page home">
+
+    {{>nav title='icedreams' black=true}}
+
+    <div class="content-scrollable">
+      <div class="bg-image home">
+        <h1 class="title-home">
+          <img src="img/app/logo-local.svg" alt="Ice Dreams Recipes"/>
+        </h1>
+        
+        <span class="arrow"></span>
+      </div>
+      <h2 class="list-title">Recipes</h2>
+      <div class="list-subtitle">Make your dreams become a reality 
+      </div>
+      <div class="list-recipes">
+        {{#each featuredRecipes}}
+          {{> recipeItem recipe=this size='small'}}
+        {{/each}}
+      </div>
+
+      <a href="{{pathFor 'recipes'}}" class="btn-primary">Explore all our recipes</a>
+    </div>
+
+  </div>
+</template>

@@ -1,0 +1,60 @@
+<template name="appBody">
+  <div class="wrapper-welcome">
+    <div class="title-welcome">icedreams</div>
+    
+    
+    <div class="description-welcome">
+    The Icedreams app is designed to provide tailored recipes to all the users. <br> <hr> Moreover, the app includes a special feature called “My Dreams” where users can suggest their favorites recipes, contributing to make the Ice dreams selection limitless. <br> <hr> Making Ice cream has never been so easy before.
+    </div>
+
+   
+  </div>
+
+  <div id="container" class="{{menuOpen}} {{overlayOpen}}">
+    <section id="menu" class="overthrow">
+      <a href="{{pathFor 'home'}}" class="{{activePage 'home'}}">
+        <span class="wrapper-menu-item">
+          <span class="icon-home"></span>
+          <span class="title-menu">Home</span>
+        </span>
+      </a>
+      
+      <a href="{{pathFor 'recipes'}}" class="{{activePage 'recipes' 'recipe'}}">
+        <span class="wrapper-menu-item">
+          <span class="icon-category"></span>
+          <span class="title-menu">Recipes</span>
+        </span>
+      </a>
+      <a href="{{pathFor 'about'}}" class="{{activePage 'about'}}">
+        <span class="wrapper-menu-item">
+          <span class="icon-user"></span>
+          <span class="title-menu">MyDream</span>
+        </span>
+      </a>
+    </section>
+
+      <div class="notifications">
+        {{#unless connected}}
+          <div class="notification">
+            <span class="icon-sync"></span>
+            <div class="title-notification">Trying to connect</div>
+          </div>
+        {{/unless}}
+        {{#each notifications}}
+          <div class="notification">
+            <a class="btn-primary js-notification-action">{{action}}</a>
+            <div class="title-notification">{{title}}</div>
+          </div>
+        {{/each}}
+      </div>
+
+    {{> overlay}}
+
+    <div class="content-overlay"></div>
+
+    <div id="content-container">
+      {{> yield}}
+    </div>
+
+  </div>
+</template>

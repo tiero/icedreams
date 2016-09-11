@@ -1,0 +1,72 @@
+<template name="about">
+  <div class="page about">
+    <form class="new-task">
+    {{> nav title='MyDream' black=true}}
+
+    <div class="content-scrollable">
+      <div class="bg-image about">
+        <h1 class="title-about">
+          <img src="img/app/title-about.svg" alt="Go Local"/>
+        </h1>
+      </div>
+      <div class="description-about">
+       
+
+       <center>
+        
+            <span>fruits</span>
+            <hr />
+            <select name="fruits" class="styled-select slate selectpicker span2" >
+                    <option selected value="fragola">Goji berry</option>
+                    <option value="pesca">Peaces</option>
+                    <option value="apples">Apples</option>
+                    <option value="raspberries">Raspberries</option>
+                    <option value="Papaya">Papaya</option>
+                    <option value="Lemons">Lemons</option>
+                    <option value="Strawberries">Strawberries</option>
+                    <option value="Coconuts">Coconuts</option>
+
+
+            </select> 
+            <br>
+            <br>
+            <span>vegetables</span>
+            <hr />
+            <select name="veg" class="styled-select slate selectpicker span2" >
+                    <option selected value="Sedano">Sedano</option>
+                    <option value="Carciofi">Carciofi</option>
+                    <option value="Spinaci">Spinaci</option>
+                    <option value="Radicchio">Radicchio</option>
+                    <option value="Broccoli">Broccoli</option>
+                    <option value="Asparagus">Asparagus</option>
+                    <option value="Chard">Chard</option>
+
+            </select> 
+            <br>
+            <br>
+            <span>Liquids</span>
+            <hr />
+            <select name="liquid" class="styled-select selectpicker span2" >
+                    <option selected value="water">Water</option>
+                    <option value="Wine">Wine</option>
+                    <option value="Rum">Rum</option>
+                    <option value="Prosecco">Prosecco</option>
+                    <option value="Champagne">Champagne</option>
+                    <option value="Beer">Beer</option>
+            </select> 
+            <br>
+
+
+
+         <img src="favicon.png" alt="icedreams logo"><br>
+         Input your email for sign up
+             <input type="email" name="email" placeholder="Email" />
+        </center>
+
+      </div>
+
+    </div>
+    <a href="#" class="btn btn-primary" name="Send">Send</a>
+    </form>
+  </div>
+</template>
