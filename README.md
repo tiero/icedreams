@@ -11,7 +11,7 @@ curl https://install.meteor.com/ | sh
 When the installation finish, clone the repository <br>
 Paste in Terminal<br>
 <code>
-https://github.com/tiero/icedreams.git icedreams-app
+git clone https://github.com/tiero/icedreams.git icedreams-app
 </code><br><br>
 
 Go inside the folder <br>
